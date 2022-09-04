@@ -21,7 +21,7 @@ const Details = ({ userNum }) => {
         toggleDetails
           ? "right-[0px] transition-all ease-in-out"
           : "right-[-150%]"
-      } hidden md:block w-[30%] bg-white fixed top-0  shadow-2xl transition-all ease-in-out`}
+      } hidden md:block w-[25%] 2xl:w-[18%] bg-white fixed top-0 shadow-2xl transition-all ease-in-out z-50`}
     >
       {/* Nav */}
       <div className="flex justify-between">
@@ -52,12 +52,12 @@ const Details = ({ userNum }) => {
         </div>
       </div>
       {/* Details */}
-      <div className="flex justify-between mx-8 2xl:mx-20 text-sm 2xl:text-base text-slate-600 pb-3">
+      <div className="flex justify-between mx-8 2xl:mx-12 text-sm 2xl:text-base text-slate-600 pb-3">
         <h3>Detail</h3>
         <h3>Activity</h3>
         <h3>Related</h3>
       </div>
-      <div className="w-12 bg-indigo-500 h-[3px] ml-7 2xl:ml-[4.8rem]"></div>
+      <div className="w-12 bg-indigo-500 h-[3px] ml-7 2xl:ml-11"></div>
       <div className="w-full h-[1px] bg-blue-200"></div>
       <div className="mx-2 overflow-auto h-[85vh] 2xl:h-[100vh] pr-3">
         <DetailHeader
