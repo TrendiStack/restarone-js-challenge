@@ -2,6 +2,7 @@ import {
   Checkbox,
   Paper,
   Table,
+  TableCell,
   TableContainer,
   TableHead,
   TableRow,
@@ -10,21 +11,16 @@ import React from "react";
 import TableBodyCell from "./table/TableBodyCell";
 import TableHeadCell from "./table/TableHeadCell";
 import data from "../../mock-data";
-import { useContext } from "react";
-import { DetailsContext } from "../../context/details-context";
 
 const DesktopFeed = ({ setUserNum }) => {
-  const { handleDetailsToggle } = useContext(DetailsContext);
   return (
-    <TableContainer
-      onClick={handleDetailsToggle}
-      className="hidden lg:block"
-      component={Paper}
-    >
-      <Table size="small" aria-label="a dense table">
+    <TableContainer className="hidden lg:block" component={Paper}>
+      <Table size="small">
         <TableHead>
-          <Checkbox size="small" className="absolute top-[110.5px]" />
           <TableRow className="shadow-md">
+            <TableCell>
+              <Checkbox size="small" />
+            </TableCell>
             <TableHeadCell
               text="First Name"
               indent={true}
