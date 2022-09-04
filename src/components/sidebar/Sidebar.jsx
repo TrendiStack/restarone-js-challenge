@@ -10,7 +10,7 @@ const Sidebar = () => {
     <div
       className={`${
         toggleNav ? "left-[0] transition-all ease-in-out" : "left-[-100%] "
-      } text-lg md:text-[0.7em] 2xl:text-[1em] bg-[#311D40] text-slate-100 w-[85%] md:w-[20%] 2xl:w-[15%] h-screen fixed md:sticky z-40 top-[0px] transition-all ease-in-out`}
+      } text-lg md:text-[0.7em] 2xl:text-[1em] bg-[#311D40] text-slate-100 w-[85%] md:w-[40%] lg:w-[20%] 2xl:w-[15%] h-screen fixed md:sticky z-40 top-[0px] transition-all ease-in-out`}
     >
       <UserInfo />
       <div>

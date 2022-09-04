@@ -9,7 +9,7 @@ import { IconButton, Paper } from "@mui/material";
 
 const DesktopNav = () => {
   return (
-    <div className="hidden md:flex justify-between items-center py-1 border-solid border border-b-[1px] border-bg-slate-200 shadow-md mb-2 px-4">
+    <div className="hidden lg:flex justify-between items-center py-1 border-solid border border-b-[1px] border-bg-slate-200 shadow-md mb-2 px-4">
       <div>
         <h1>People</h1>
         <div className="w-12 bg-indigo-500 h-[3px] absolute top-[3.4rem]"></div>

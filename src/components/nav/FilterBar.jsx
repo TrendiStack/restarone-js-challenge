@@ -10,7 +10,7 @@ import data from "../../mock-data";
 
 const FilterBar = () => {
   return (
-    <div className="hidden md:flex justify-between items-center py-1 pl-3 pr-7 mb-1">
+    <div className="hidden lg:flex justify-between items-center py-1 pl-3 pr-7 mb-1">
       <div className="flex gap-4 items-center">
         <div className="border-solid border py-1 pr-1 pl-3 text-sm cursor-pointer">
           <p>
