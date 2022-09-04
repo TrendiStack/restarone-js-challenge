@@ -1,4 +1,11 @@
-import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Badge,
+  Box,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Notifications, Add, Help, Search } from "@mui/icons-material";
 import { NavContext } from "../../context/nav-context";
@@ -46,7 +53,9 @@ const MobileNav = () => {
             color="inherit"
             aria-label="menu"
           >
-            <Notifications />
+            <Badge badgeContent={47} color="error">
+              <Notifications />
+            </Badge>
           </IconButton>
           <IconButton
             size="large"

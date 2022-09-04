@@ -5,7 +5,7 @@ import {
   Notifications,
   Search,
 } from "@mui/icons-material";
-import { IconButton, Paper } from "@mui/material";
+import { Badge, IconButton, Paper } from "@mui/material";
 
 const DesktopNav = () => {
   return (
@@ -32,7 +32,9 @@ const DesktopNav = () => {
           <Add />
         </IconButton>
         <IconButton size="large" edge="start" color="inherit" aria-label="menu">
-          <Notifications />
+          <Badge badgeContent={47} color="error">
+            <Notifications />
+          </Badge>
         </IconButton>
         <IconButton size="large" edge="start" color="inherit" aria-label="menu">
           <LocalParking className="bg-gray-700 rounded p-[4px] text-white" />

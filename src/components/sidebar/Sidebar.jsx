@@ -17,7 +17,6 @@ const Sidebar = () => {
         <ul className="h-screen md:h-full overflow-y-scroll md:overflow-y-auto">
           <SidebarOption text="DashBoard" icon="Home" num="1" />
           <div className="bg-[#655691] w-full h-[1px] my-3"></div>
-
           <div className="flex items-center">
             <SidebarOption text="Leads" icon="MyLocation" num="2" />
             <LockOpen className="text-base absolute right-5" />
