@@ -1,4 +1,10 @@
-import { East, MoreVert, OpenInNew, StarBorder } from "@mui/icons-material";
+import {
+  ContentCopy,
+  East,
+  MoreVert,
+  OpenInNew,
+  StarBorder,
+} from "@mui/icons-material";
 import { Avatar, Checkbox, IconButton } from "@mui/material";
 import React, { useContext } from "react";
 import DetailHeader from "./DetailHeader";
@@ -46,14 +52,20 @@ const Details = ({ userNum }) => {
         </div>
       </div>
       {/* Details */}
-      <div className="flex justify-between mx-2 text-sm text-slate-600">
+      <div className="flex justify-between mx-8 2xl:mx-20 text-sm 2xl:text-base text-slate-600 pb-3">
         <h3>Detail</h3>
         <h3>Activity</h3>
         <h3>Related</h3>
       </div>
+      <div className="w-12 bg-indigo-500 h-[3px] ml-7 2xl:ml-[4.8rem]"></div>
       <div className="w-full h-[1px] bg-blue-200"></div>
       <div className="mx-2 overflow-auto h-[85vh] 2xl:h-[100vh] pr-3">
-        <DetailHeader title="Name" sign="*" input={data[userNum]?.first_name} />
+        <DetailHeader
+          title="Name"
+          sign="*"
+          input={data[userNum]?.first_name}
+          icon="ContentCopy"
+        />
         <DetailHeader
           title="Company"
           input={data[userNum]?.comapny}
@@ -86,6 +98,7 @@ const Details = ({ userNum }) => {
           title="Owner"
           input={data[userNum]?.owner}
           blueText={true}
+          icon="Close"
         />
 
         <div className="mt-3">
